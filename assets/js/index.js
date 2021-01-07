@@ -10,7 +10,7 @@ let direction = 1;
 let gameOver = false;
 let giveApple = true;
 let food;
-let speed = 200;
+let speed = 300;
 let myInterval;
 
 
@@ -122,7 +122,7 @@ function resetGame(){
 	gameOver = false;
 	giveApple = true;
 	food = null;
-	speed = 500;
+	speed = 300;
 	squares.forEach((div)=> {
 		div.classList.remove("snake", "apple");
 	});
