@@ -62,7 +62,7 @@ function move() {
 				speed *= .95;
 				currentScore += 10;
 				clearInterval(myInterval);
-				setInterval(move, speed);
+				myInterval = setInterval(move, speed);
 				score.textContent = "Score:"+ currentScore;
 			}
 		}
@@ -110,9 +110,12 @@ function stopInterval(){
 }
 
 function foodMaker(){
-	food = Math.floor(Math.random()*400)+1;
+	
+	do{
+		food = Math.floor(Math.random()*400)+1;
+	} while(sqaures[food].classList.contains("snake"))
 	squares[food].classList.add("apple");
-	giveApple = false;
+	giveApple = false;	
 }
 
 function resetGame(){
