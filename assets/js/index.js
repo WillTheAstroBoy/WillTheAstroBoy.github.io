@@ -112,7 +112,7 @@ function foodMaker(){
 	
 	do{
 		food = Math.floor(Math.random()*400)+1;
-	} while(sqaures[food].classList.contains("snake"))
+	} while(squares[food].classList.contains("snake"))
 	squares[food].classList.add("apple");
 	giveApple = false;	
 }
