@@ -10,7 +10,7 @@ let direction = 1;
 let gameOver = false;
 let giveApple = true;
 let food;
-let speed = 300;
+let speed = 400;
 let myInterval;
 
 
@@ -26,7 +26,7 @@ createBoard();
 currentSnake.forEach((index) =>squares[index].classList.add("snake"));
 
 function checkGameOver(pos){
-	if(pos%20 === 0 && pos+direction%20 != 0 && direction === -1){
+	if(pos%20=== 0 && direction === -1){
 		gameOver = true;
 	} else if(pos+direction < 0 ){
 		gameOver = true;
@@ -44,6 +44,7 @@ function checkGameOver(pos){
 }
 
 function move() {
+	const tail = currentSnake.pop();
 	checkGameOver(currentSnake[0] );
 	
 	if(gameOver){
@@ -57,13 +58,15 @@ function move() {
 				squares[food].classList.remove("apple");
 				squares[food].classList.add("snake");
 				giveApple = true;
-				currentSnake.unshift(currentSnake[0] + direction);
-				speed -= 30;
+				currentSnake.push(tail);
+				speed *= .95;
 				currentScore += 10;
+				clearInterval(myInterval);
+				setInterval(move, speed);
 				score.textContent = "Score:"+ currentScore;
 			}
 		}
-		const tail = currentSnake.pop();
+		
 		squares[tail].classList.remove("snake");
 		currentSnake.unshift(currentSnake[0] + direction);
 		squares[currentSnake[0]].classList.add("snake");
@@ -122,7 +125,7 @@ function resetGame(){
 	gameOver = false;
 	giveApple = true;
 	food = null;
-	speed = 300;
+	speed = 400;
 	squares.forEach((div)=> {
 		div.classList.remove("snake", "apple");
 	});
