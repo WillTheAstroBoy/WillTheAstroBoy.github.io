@@ -69,8 +69,7 @@ function move() {
 		
 		squares[tail].classList.remove("snake");
 		currentSnake.unshift(currentSnake[0] + direction);
-		squares[currentSnake[0]].classList.add("snake");
-		console.log(currentSnake);		
+		squares[currentSnake[0]].classList.add("snake");		
 	}	
 }
 
