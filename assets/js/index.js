@@ -59,7 +59,7 @@ function move() {
 				squares[food].classList.add("snake");
 				giveApple = true;
 				currentSnake.push(tail);
-				speed *= .95;
+				speed *= .98;
 				currentScore += 10;
 				clearInterval(myInterval);
 				myInterval = setInterval(move, speed);
