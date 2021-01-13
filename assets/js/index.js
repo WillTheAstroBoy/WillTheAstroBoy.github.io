@@ -76,6 +76,10 @@ function move() {
 startBtn.addEventListener("click", startGame);
 document.addEventListener("keydown", (event)=> handleInput(event));
 resetBtn.addEventListener("click", resetGame);
+document.querySelector(".btn-up").addEventListener("click", (event)=> {direction != 20 ? direction = -20 : null});
+document.querySelector(".btn-down").addEventListener("click", (event)=> direction != -20 ? direction = 20 : null);
+document.querySelector(".btn-right").addEventListener("click", (event)=> direction != -1 ? direction = 1 : null );
+document.querySelector(".btn-left").addEventListener("click", (event)=> direction != 1 ? direction = -1  : null);
 
 function handleInput(event){
 	const input = event.code;
