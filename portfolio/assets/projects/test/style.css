@@ -273,3 +273,19 @@ main {
 }
 
 
+.txt-1 {
+    order: 7;
+}
+
+.txt-2 {
+    order: 8;
+}
+
+.txt-3 {
+    order: 9;
+}
+
+.txt-1, .txt-2, .txt-3 {
+    font-weight: 300;
+}
+
