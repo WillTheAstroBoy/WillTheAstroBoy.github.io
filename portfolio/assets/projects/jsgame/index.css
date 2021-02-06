@@ -1,0 +1,30 @@
+
+.grid {
+	width: 550px;
+	height: 300px;
+	margin: 7em auto;
+	border: 1px solid gray;
+	background: whitesmoke;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.grid > div {
+	width: 10px;
+	height: 10px;
+}
+
+.container p {
+	margin: 0;
+	text-align: right;
+	margin-right: 1em;
+}
+
+.wall {
+	background: green;
+
+}
+
+.box {
+	background: red;
+}
