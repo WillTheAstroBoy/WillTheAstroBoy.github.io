@@ -12,7 +12,7 @@ const temperatureC = document.querySelector(".temperature-container");
 async function getWeather(){
 	const getPromise = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}`);
 	const response = await getPromise.json();
-	const getTimePromise = await fetch(`http://api.timezonedb.com/v2.1/get-time-zone?key=${timeZoneApiKey}&format=json&by=position&lat=${response.coord.lat}&lng=${response.coord.lon}`)
+	const getTimePromise = await fetch(`https://api.timezonedb.com/v2.1/get-time-zone?key=${timeZoneApiKey}&format=json&by=position&lat=${response.coord.lat}&lng=${response.coord.lon}`)
 	const responseTime = await getTimePromise.json();
 	
 	const currentTime = responseTime.formatted;
