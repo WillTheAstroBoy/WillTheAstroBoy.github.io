@@ -142,5 +142,8 @@ form.addEventListener("submit", (e)=>{
 	document.querySelector(".temperature-container").innerHTML = "";
 	getWeather();
 	
+	e.target[1].disabled = true;
+	setTimeout(()=> e.target[1].disabled = false, 20000);
+	
 
 });
