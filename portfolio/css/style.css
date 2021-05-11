@@ -526,6 +526,10 @@ h3{font-size: var(--fs-h3);}
         projects
 ==========================*/
 
+.project-real-link{
+    text-decoration: none;
+}
+
 .project-img {
     object-fit: cover;
     object-position: left;
