@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>api</title>
+	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Blinker:wght@200;300;400;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container main">
+		<form class="search-form container" target="#">
+			<input class="input-text" type="text" name="search" placeholder="Enter name of city" />
+			<input type="submit" name="" class="submit-btn" value="submit"> 
+		</form>
+
+		<div class="temperature-container container">
+			<div class="city-name">London</div>
+			<div class="temp container">
+				<div class="container temp-row1">
+					<div class="temp-num">9</div>
+					<div class="degree">&#176</div>
+				</div>
+				<div class="weather">
+					<div class="weather-feel-like">Feels like: 5&#176</div>
+					<div class="min-max container">
+						<div class="min">Min: 7&#176</div>
+						<div class="max">Max: 10&#176</div>
+					</div>
+					<div class="weather-description">Chilly</div>
+				</div>
+				<div class="weather-more-info">
+					with a ton of clouds
+				</div>
+			</div>
+			<div class="temp-details container">
+				<div class="card humidity "><img src="humidity.png" alt="humidity" class="humidity-img" /> <br/>Humidity<br/> 56%</div>
+				<div class="card pressure"><img class="pressure-img" src="pressure.png" alt="pressure"> Pressure<br/> 1000mb</div>
+				<div class="card visibility"><img class="visibility-img" src="visibility.png" alt="visibility image" /> Visibility<br/> 199m</div>
+				<div class="card wind">
+					N-E
+					<div class="wind-speed">3 m/s</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
