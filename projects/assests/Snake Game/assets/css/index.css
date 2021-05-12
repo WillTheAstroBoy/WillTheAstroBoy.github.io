@@ -1,0 +1,105 @@
+
+body {
+	background-image: url(../images/background3.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	width: 100vw;
+
+
+}
+
+.grid {
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	border: 5px solid orange;
+	display: flex;
+	flex-wrap: wrap;
+	background-image: url("../images/gridBack.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 200% 140%;
+	margin-bottom: 33px;
+	
+}
+
+.game {
+	text-align: center;
+}
+
+.game h1 {
+	margin-bottom: 10px;
+	margin-top: 5px;
+	font-size: 50px;
+	font-weight: 600;
+	color: green;
+}
+
+.game h1 {
+	text-shadow: 4px 4px 5px black;
+}
+
+.square {
+	width: 20px;
+	height: 20px;
+	box-sizing: border-box;
+	
+}
+.snake, .apple {
+	box-sizing: border-box;
+	border-radius: 15px;
+}
+
+.snake {
+	background: green;
+	border: 4px yellow solid;
+
+}
+
+.apple {
+	background: #fc0000;
+	border-top: 4px solid green;
+	box-shadow: 0.5px 0.5px 0.5px 0.4px black;
+	
+}
+
+.resetBtn, .startBtn {
+	font-size: 30px;
+	margin: 0 auto;
+	padding: 10px 20px;
+	font-weight: 550;
+	border-radius: 5px;
+	background: yellow;
+	color: green;
+	text-shadow: 1px 1px 2px gray;
+	box-shadow: 4px 4px 5px black;
+}
+
+.message {
+	font-size: 40px;
+	font-weight: 550;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-shadow: 2px 2px 5px gray;
+}
+
+.resetBtn {
+	display: none;
+}
+
+
+/*****
+	button
+******/
+
+.btn {
+	padding: 1em 2.5em;
+}
+
+.centre-btn {
+	display: flex;
+	width: 400px;
+	margin: 1em auto;
+	justify-content: space-between;
+}
